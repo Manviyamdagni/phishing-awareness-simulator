@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing Awareness Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🔐 Phishing Awareness Simulator</h1>
+
+    <p id="scenario" class="scenario-box"></p>
+
+    <div class="buttons">
+      <button onclick="checkAnswer(true)">Phishing</button>
+      <button onclick="checkAnswer(false)">Legitimate</button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <p id="score" class="score">Score: 0</p>
+
+    <p class="tip">
+      💡 Tip: Always verify sender, urgency, and links before clicking.
+    </p>
+
+    <button id="nextBtn" onclick="nextScenario()">Next Scenario</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
